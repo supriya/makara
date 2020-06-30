@@ -33,6 +33,10 @@ module ActiveRecord
         end
       end
 
+      def configure_connection
+        puts "XXXXXXXXXXXXX\n\n\n"
+      end
+
 
       protected
 
