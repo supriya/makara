@@ -1,5 +1,5 @@
 require 'active_record/connection_adapters/makara_abstract_adapter'
-require 'active_record/connection_adapters/proxysql_adapter'
+require 'active_record/connection_adapters/mysql2_adapter'
 
 if ActiveRecord::VERSION::MAJOR >= 4
 
