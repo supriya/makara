@@ -34,6 +34,7 @@ module ActiveRecord
       end
 
       def configure_connection
+        puts "Overridden configure_connection"
         @connection.query_options.merge!(as: :array)
 
         variables = @config.fetch(:variables, {}).stringify_keys
@@ -83,7 +84,7 @@ module ActiveRecord
       protected
 
       def active_record_connection_for(config)
-        ::ActiveRecord::Base.proxysql_connection(config)
+        ::ActiveRecord::Base.mysql2_connection(config)
       end
 
     end

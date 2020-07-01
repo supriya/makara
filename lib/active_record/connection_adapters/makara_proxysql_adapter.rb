@@ -36,7 +36,7 @@ module ActiveRecord
       protected
 
       def active_record_connection_for(config)
-        ::ActiveRecord::Base.proxysql_connection(config)
+        ::ActiveRecord::Base.mysql2_connection(config)
       end
 
     end
